@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time Manager</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Управление задачами</h1>
+      <div class="task-input">
+        <input id="taskTitle" type="text" placeholder="Название задачи" />
+        <input id="taskTime" type="time" />
+        <button id="addTaskButton">Добавить задачу</button>
+      </div>
+      <div class="task-sections">
+        <div class="tasks" id="currentTasks">
+          <h2>Текущие задачи</h2>
+          <ul id="currentTaskList"></ul>
+        </div>
+        <div class="tasks" id="doneTasks">
+          <h2>Выполненные задачи</h2>
+          <ul id="doneTaskList"></ul>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="./index.mjs"></script>
+  </body>
+</html>
